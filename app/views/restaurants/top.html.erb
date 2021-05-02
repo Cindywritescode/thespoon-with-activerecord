@@ -4,6 +4,7 @@
 <ul>
   <li>
   <%= link_to restaurant.name, restaurant_path(restaurant) %> |
+  chef: <%= restaurant.chef_name %>
   <%= '⭐️' * restaurant.rating %>
   </li>
 </ul>
