@@ -1,0 +1,11 @@
+<h1>Top rating restaurants</h1>
+
+<% @top_restaruants.each do |restaurant| %>
+<ul>
+  <li>
+  <%= link_to restaurant.name, restaurant_path(restaurant) %> |
+  <%= '⭐️' * restaurant.rating %>
+  </li>
+</ul>
+
+<% end %>
